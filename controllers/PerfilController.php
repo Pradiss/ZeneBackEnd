@@ -42,7 +42,7 @@ class PerfilController{
         $baseUrl = $this->url;
         $acao = "criar";
 
-        require "views/PerfilForm.php";
+        require "views/CadastroForm.php";
         
     }
     public function atualizar(){

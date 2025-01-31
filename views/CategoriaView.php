@@ -95,30 +95,30 @@ $select .= "
 
 }else{
     $select = "
-         <section class='col-md-3'>
+    <section class='col-md-3'>
         <h4>Selecione os Filtros</h4>
         <form method='post' id='form1' action='$baseUrl/categoria/filtrar' >
             <div>
                 <h5>Categoria</h5>
                 <div>
                   <div class='form-check form-switch'>
-                        <input class='form-check-input' type='checkbox' name='pagode' value='pagode' role='switch' id='pagode' $check>
+                        <input class='form-check-input' type='checkbox' name='pagode' value='Pagode' role='switch' id='pagode' $check>
                         <label class='form-check-label' for='pagode'>Pagode</label>
                     </div>
                   <div class='form-check form-switch'>
-                        <input class='form-check-input' type='checkbox' name='baile' value='baile' role='switch' id='baile' $check>
+                        <input class='form-check-input' type='checkbox' name='baile' value='Baile' role='switch' id='baile' $check>
                         <label class='form-check-label' for='baile'>Baile</label>
                     </div>
                   <div class='form-check form-switch'>
-                        <input class='form-check-input' type='checkbox' name='rock' value='rock' role='switch' id='rock' $check>
+                        <input class='form-check-input' type='checkbox' name='rock' value='Rock' role='switch' id='rock' $check>
                         <label class='form-check-label' for='rock'>Rock</label>
                     </div>
                   <div class='form-check form-switch'>
-                        <input class='form-check-input' type='checkbox' name='samba' value='samba' role='switch' id='samba' $check>
+                        <input class='form-check-input' type='checkbox' name='samba' value='Samba' role='switch' id='samba' $check>
                         <label class='form-check-label' for='samba'>Samba</label>
                     </div>
                   <div class='form-check form-switch'>
-                        <input class='form-check-input' type='checkbox' name='mpb' value='mpb' role='switch' id='mpb' $check>
+                        <input class='form-check-input' type='checkbox' name='mpb' value='Mpb' role='switch' id='mpb' $check>
                         <label class='form-check-label' for='mpb'>Mpb</label>
                     </div>
                 </div>

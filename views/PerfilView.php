@@ -18,6 +18,10 @@ $user = "";
     $idCategoria = $result_perfil["idCategoria"];
 
 
+
+    $botaoEdit = $idUsuario == $_SESSION['idUsuario'] ? "<a class='btn btn-primary'  href='[[base-url]]/perfil/editar/$idUsuario'>Editar Dados</a>" : "";
+
+
     $user="
             <div class='row gutters-sm'>
               <div class='col-sm-12 col-md-4 mb-3'>
@@ -59,6 +63,7 @@ $user = "";
                 </div>
 
                <div class='col-md-8 '>
+              
                
                 <div class='card text-dark '>
                   <div class='card-body rounded '>
@@ -154,19 +159,14 @@ $user = "";
                     </div>
                     <hr>
                     <div class='row mt-3'>
-                 <div class='col-sm-12'>
-                   <a class='btn btn-primary'  href='[[base-url]]/perfil/editar/$idUsuario'>Editar Dados</a>
+                  <div class='col-sm-12'>
+                    $botaoEdit
                    </div>
                  </div>
                   </div>
                 </div>
               </div>
-            </div>
-    ";
-
-
-
-
+            </div>";
 
 
 $header = file_get_contents("views/templates/html/header.html");

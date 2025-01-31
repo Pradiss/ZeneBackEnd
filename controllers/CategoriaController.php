@@ -21,10 +21,10 @@ class CategoriaController {
     
     public function filtrar(){
 
-    $generos = ["rock" =>  isset($_POST["rock"]) ? $_POST["rock"] : "" ,
-    "samba" => isset($_POST["samba"]) ? $_POST["samba"] : "" ,
-    "pagode" => isset($_POST["pagode"]) ? $_POST["pagode"] : "", "mpb" => isset($_POST["mpb"]) ? $_POST["mpb"] : "" ,
-    "baile" => isset($_POST["baile"]) ? $_POST["baile"] : ""];
+    $generos = ["Rock" =>  isset($_POST["rock"]) ? $_POST["rock"] : "" ,
+    "Samba" => isset($_POST["samba"]) ? $_POST["samba"] : "" ,
+    "Pagode" => isset($_POST["pagode"]) ? $_POST["pagode"] : "", "mpb" => isset($_POST["mpb"]) ? $_POST["mpb"] : "" ,
+    "Baile" => isset($_POST["baile"]) ? $_POST["baile"] : ""];
     
     $listaPerfil = [];
 

@@ -10,13 +10,13 @@
 </head>
 <body>
 <section class="vh-100 gradient-custom bg-dark">
-  <div class="container py-2 h-100">
-    <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-        <div class="card bg-white text-dark" style="border-radius: 1rem;">
+  <div class="container py-2 h-100 ">
+    <div class="row d-flex justify-content-center align-items-center  h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5 ">
+        <div class="card bg-white text-dark rounded-5" style="border-radius: 1rem;">
           <div class="card-body p-5 text-center">
 
-            <div class="mb-md-5 mt-md-4 pb-5">
+            <div class="mb-md-5 mt-md-4 ">
 
               <h2 class="fw-bold mb-2 text-uppercase">Login </h2>
               <p class="text-dark-50 mb-4">Porfavor entre com seu email e senha!</p>

@@ -10,12 +10,12 @@
 </head>
 <body class='bg-dark'>
 
-<section >
+<section class="container bg-dark">
 
     
-    <div class="row d-flex justify-content-center py-3 ">
+    <div class="row d-flex justify-content-center py-5  ">
 
-        <div class="card col-11 col-md-8 col-lg-6 col-xl-5 py-4 rounded-5 shadow  ">
+        <div class="card col-11 col-md-7 col-lg-5 col-xl-5 py-5 rounded-5 shadow ">
             <div class=" text-center">
                 <h4 class="fw-bold text-center  text-uppercase ">Faça seu cadastro  </h4>
                 <p>Cadastre-se</p>
@@ -24,6 +24,13 @@
             <form id="form1" name="form1" method="post" action="<?= $baseUrl ?>/perfil/atualizar">
             
             
+            <div class='p-3 d-flex '>
+                <input type="text" id="nome"  name="nome" class="form-control p-3  rounded-5" placeholder="Digite seu Nome" required>
+                <!-- <div>
+                        <input type="number" id="idade"  name="idade" class="form-control p-3 rounded-5"  placeholder=" Idade" required>
+    
+                   </div> -->
+            </div>
             
             <div class='p-3 '>
                 <input type="usuario" id="usuario"  name="usuario" class="form-control p-3  rounded-5" placeholder="Crie seu Usuario" required>
@@ -32,14 +39,6 @@
             <div class='p-3  '>
                 <input type="password" id="senha"  name="senha" class="form-control p-3  rounded-5" placeholder="Crie sua senha" required>
                
-            </div>
-
-            <div class='p-3 d-flex '>
-                <input type="text" id="nome"  name="nome" class="form-control p-3 me-3 rounded-5" placeholder="Digite seu Nome" required>
-                <div>
-                    <input type="number" id="idade"  name="idade" class="form-control p-3 rounded-5"  placeholder=" Idade" required>
-
-                </div>
             </div>
 
             <div class='p-3'>
@@ -55,13 +54,13 @@
                 </div>
             </div>
 
-            <div class='p-3'>
+            <!-- <div class='p-3'>
                 <textarea type="text" id="descricao"  name="descricao" class="form-control p-3 rounded-5 " rows="6" cols="70" placeholder="Deixe sua Descrição"></textarea>
-            </div>
+            </div> -->
             
             <div class="d-flex py-3 justify-content-center">
 
-                <button type="submit" id="btnAcessar" name="btnAcessar" class=" rounded-5 w-75  fw-bold text-white btn btn-lg btn-dark">Cadastrar-se</button>
+                <button type="submit" id="btnAcessar" name="btnAcessar" class=" rounded-5 w-75 fw-bold text-white btn btn-lg btn-dark">Cadastrar-se</button>
             </div>
                <input type="hidden" name="acao" value="<?= $acao?>">
                
@@ -75,6 +74,11 @@
         </div>
 
     </div>
+
+    <section>
+        <div class="row d-flex justify-content-center">
+            
+    </section>
 
 </section>
 

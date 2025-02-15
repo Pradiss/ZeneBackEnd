@@ -18,7 +18,8 @@ class CategoriaController {
         $baseUrl = $this->url;
         require "views/CategoriaView.php";
     }
-    
+
+
     public function filtrar(){
 
     $generos = ["Rock" =>  isset($_POST["rock"]) ? $_POST["rock"] : "" ,

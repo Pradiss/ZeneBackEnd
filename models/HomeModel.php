@@ -16,6 +16,11 @@ class Home {
         return $result->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    public function getCategoria(){
+        $result = $this->db->prepare("SELECT * FROM categorias");
+        $result->execute();
+        return $result->fetchAll(PDO::FETCH_ASSOC);
+    }
 
 }
 

@@ -15,6 +15,9 @@ class HomeController {
 
     public function index(){
         $result_user = $this->homeModel->getAll();
+        $listaCategoria = $this->homeModel->getCategoria();
+
+
 
         $baseUrl = $this->url;
         require "views/HomeView.php";

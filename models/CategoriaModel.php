@@ -15,6 +15,8 @@ class CategoriaModel{
         return $result->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    
+    
     public function getAllPerfil(){
         $result = $this->db->prepare("SELECT * FROM usuarios");
         $result->execute();

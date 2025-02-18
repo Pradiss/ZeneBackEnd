@@ -10,37 +10,40 @@
 </head>
 <body>
 <section class="vh-100 gradient-custom bg-dark">
-  <div class="container py-2 h-100">
-    <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-        <div class="card bg-white text-dark" style="border-radius: 1rem;">
+  <div class="container py-2 h-100 ">
+    <div class="row d-flex justify-content-center align-items-center  h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5 ">
+        <div class="card bg-white text-dark rounded-5" style="border-radius: 1rem;">
           <div class="card-body p-5 text-center">
 
-            <div class="mb-md-5 mt-md-4 pb-5">
+            <div class="mb-md-5 mt-md-4 ">
 
               <h2 class="fw-bold mb-2 text-uppercase">Login </h2>
-              <p class="text-white-50 mb-5">Porfavor entre com seu email e senha!</p>
+              <p class="text-dark-50 mb-4">Porfavor entre com seu email e senha!</p>
               
                       <?= $erro ?>
                       <form id="form1" name="form1" method="post" action="<?= $baseUrl ?>/login/autenticar"> 
-                        <div class="form-floating mb-3">
-                           <input type="usuario" name="usuario" id="usuario" class="form-control">
-                           <label for="usuario">Usuário:</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                           <input type="password" name="senha" id="senha" class="form-control">
-                           <label for="senha">Senha:</label>
-                        </div>
+                       
+                        <div class='p-3  '>
+                          <input type="usuario" id="usuario"  name="usuario" class="form-control p-3 me-3 rounded-5" placeholder="Digite seu Usuario">
+               
+                        </div>  
+                        <div class='p-3  '>
+                          <input type="password" id="senha"  name="senha" class="form-control p-3 me-3 rounded-5" placeholder="Digite sua Senha">
+               
+                        </div>  
                         
-                        <button type="submit" id="btnAcessar" name="btnAcessar" class="w-100 btn btn-lg btn-primary">Acessar</button>
-                     </form>
-              
+                        <div class="m-3">
+                          <button type="submit" id="btnAcessar" name="btnAcessar" class=" rounded-5 w-100 fw-bold text-white btn btn-lg btn-dark">Acessar</button>
 
+                        </div>
+
+                     </form>
             </div>
 
             <div>
               <p class="mb-0">Não tem uma conta na Zene? </p>
-              <a href="<?=$baseUrl?>/perfil/criar" class="text-dark-50 fw-bold">Cadastre-se Aqui</a>
+              <a href="<?=$baseUrl?>/perfil/criar" class="text-dark fw-bold">Cadastre-se Aqui</a>
             </div>
 
           </div>

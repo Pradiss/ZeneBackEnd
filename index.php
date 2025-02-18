@@ -48,3 +48,12 @@ if($identificador){
 }else{
     $controller->$metodo();
 }
+
+function validaSessao(){
+    if(!isset($_SESSION['usuaro'])){
+
+        $baseUrl = "
+        http://localhost/integrador/zene"; 
+        header("Location: " .$baseUrl ."/login");
+    }
+}

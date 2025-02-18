@@ -18,15 +18,19 @@ $user = "";
     $idCategoria = $result_perfil["idCategoria"];
 
 
+
+    $botaoEdit = $idUsuario == $_SESSION['idUsuario'] ? "<a class='btn btn-primary rounded-5'  href='[[base-url]]/perfil/editar/$idUsuario'>Editar Dados</a>" : "";
+
+
     $user="
             <div class='row gutters-sm'>
               <div class='col-sm-12 col-md-4 mb-3'>
-                <div class='card '>
+                <div class='card rounded-5 '>
                   <div class='card-body rounded '>
                     <div class='d-flex flex-column align-items-center text-center'>
-                      <img src='$foto'  class='w-100'>
+                      <img src='$foto'  class='rounded-5 shadow w-100'>
                       <div class='mt-3 p-4 text-light'>
-                        <h4 class='text-black'>$nome</h4>
+                        <h3 class='text-black'>$nome</h3>
                         <p class='text-secondary mb-1'>$idInstrumento - </p> 
                         <p class='text-secondary mb-1'>$cidade| $uf</p>
                         <p class='text-secondary mb-1'>$descricao</p>
@@ -36,8 +40,8 @@ $user = "";
                 </div>
               
 
-                <div class='card mt-3 text-light '>
-                    <ul class='list-group list-group-flush'>
+                <div class='card mt-3 text-light rounded-5 p-3 '>
+                    <ul class='list-group list-group-flush rounded-5'>
                       <li class='list-group-item d-flex justify-content-between align-items-center flex-wrap'>
                         <h6 class='mb-0'><i class='mx-1 bi bi-whatsapp'></i>whatsapp</h6>
                         <span class='text-secondary'>(55)$telefone</span>
@@ -59,8 +63,9 @@ $user = "";
                 </div>
 
                <div class='col-md-8 '>
+              
                
-                <div class='card text-dark '>
+                <div class='card text-dark  rounded-5 p-3'>
                   <div class='card-body rounded '>
                     <div class='row'>
                       <div class='col-sm-3'>
@@ -154,19 +159,14 @@ $user = "";
                     </div>
                     <hr>
                     <div class='row mt-3'>
-                 <div class='col-sm-12'>
-                   <a class='btn btn-primary'  href='[[base-url]]/perfil/editar/$idUsuario'>Editar Dados</a>
+                  <div class='col-sm-12 '>
+                    $botaoEdit
                    </div>
                  </div>
                   </div>
                 </div>
               </div>
-            </div>
-    ";
-
-
-
-
+            </div>";
 
 
 $header = file_get_contents("views/templates/html/header.html");

@@ -28,7 +28,7 @@ class CategoriaModel{
     }
 
     public function getById($idCategoria){
-        $sql = $this->db->prepare("SELECT * FROM categorias WHERE idCategoriaUser = ?");
+        $sql = $this->db->prepare("SELECT * FROM categorias WHERE idCategoria = ?");
         $sql->execute([$idCategoria]);
         return $sql->fetch(PDO::FETCH_ASSOC);
 

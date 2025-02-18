@@ -21,10 +21,10 @@ class CategoriaController {
     
     public function filtrar(){
 
-    $generos = ["rock" =>  isset($_POST["rock"]) ? $_POST["rock"] : "" ,
-    "samba" => isset($_POST["samba"]) ? $_POST["samba"] : "" ,
-    "pagode" => isset($_POST["pagode"]) ? $_POST["pagode"] : "", "mpb" => isset($_POST["mpb"]) ? $_POST["mpb"] : "" ,
-    "baile" => isset($_POST["baile"]) ? $_POST["baile"] : ""];
+    $generos = ["Rock" =>  isset($_POST["rock"]) ? $_POST["rock"] : "" ,
+    "Samba" => isset($_POST["samba"]) ? $_POST["samba"] : "" ,
+    "Pagode" => isset($_POST["pagode"]) ? $_POST["pagode"] : "", "mpb" => isset($_POST["mpb"]) ? $_POST["mpb"] : "" ,
+    "Baile" => isset($_POST["baile"]) ? $_POST["baile"] : ""];
     
     $listaPerfil = [];
 
@@ -35,21 +35,22 @@ class CategoriaController {
 
             
             foreach($perfisFiltrados as $perfis){
-                $idCatUser = $perfis['idCategoriaUser'];
+                $idCatUser = $perfis['idCategoria'];
                 $listaPerfil = array_merge($listaPerfil, $this->categoriaModel->getByIdPerfil($idCatUser));
                 $genre = $perfis['generoMusical'];
                 $listaGenero = $this->categoriaModel->getById($idCatUser);
-                var_dump($listaGenero);
+                // var_dump($listaGenero);
+                $teste = 1;
             }
             
         }
         
     }
-    
+    // echo $_POST['rock'];
     $listaPerfil = array_unique($listaPerfil, SORT_REGULAR);
 
     $baseUrl = $this->url;
-    $teste = 1;
+    // $teste = 1;
     
         require "views/CategoriaView.php";
     }

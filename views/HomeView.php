@@ -45,7 +45,7 @@ foreach($listaCategoria as $categorias){
 
     $cardCategoria .= "
         <div class='col-6 col-sm-6 col-md-6 col-lg-3 '>
-        <div class='card rounded-5  shadow overlay' >
+        <div class='card rounded-5  shadow border border-end-2 overlay' >
         <a href='[[base-url]]/categoria' >
         <img src='$foto' class='card-img rounded-5' alt='...'>
             <div class='card-img-overlay d-flex justify-content-center align-items-center'>

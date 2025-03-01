@@ -35,7 +35,7 @@ class LoginController {
 
             unset($_SESSION["erro"]);
 
-            $erro = "<div class='alert alert-danger'> Não foi possível efeituar o login. Tente novamente </div>";
+            $erro = "<div class='alert alert-danger rounded-4'> Não foi possível efeituar o login. Tente novamente </div>";
 
             $baseUrl = $this->url;
 

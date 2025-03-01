@@ -59,12 +59,12 @@
 
                 </div>
             </div>
-
-           
             
-            <div class="d-flex py-3 justify-content-center">
+            
+            
+            <div class="my-3 ">
+                <button type="submit" id="btnAcessar" name="btnAcessar" class=" rounded-5 w-100 fw-bold text-white btn btn-lg btn-dark">Cadastrar-se</button>
 
-                <button type="submit" id="btnAcessar" name="btnAcessar" class=" rounded-5 w-75 fw-bold text-white btn btn-lg btn-dark">Cadastrar-se</button>
             </div>
                <input type="hidden" name="acao" value="<?= $acao?>">
                

@@ -19,27 +19,30 @@ $user = "";
 
 
 
-    $botaoEdit = $idUsuario == $_SESSION['idUsuario'] ? "<a class='btn btn-primary btn-lg rounded-5'  href='[[base-url]]/perfil/editar/$idUsuario'>Editar Dados</a>" : "";
+    $botaoEdit = $idUsuario == $_SESSION['idUsuario'] ? "<a class='btn btn-warning btn-lg rounded-5 p-3'  href='[[base-url]]/perfil/editar/$idUsuario'>Editar Dados</a>" : "";
 
 
     $user="
             <div class='row gutters-sm'>
               <div class='col-sm-12 col-md-4 mb-3'>
-                <div class='card rounded-5 '>
-                  <div class='card-body rounded '>
-                    <div class='d-flex flex-column align-items-center text-center'>
-                      <img src='$foto'  class='rounded-5 shadow w-100'>
-                      <div class='mt-3 p-4 text-light'>
+                  <div class='card rounded-5 '>
+                    <div class='card-body rounded '>
+                      <div class='d-flex flex-column align-items-center text-center'>
+                        <img src='$foto'  class='rounded-5 shadow w-100'>
+                        <div class='mt-3 p-4 text-light'>
+                          
+                          <h3 class='text-black'>$nome</h3>
+                          <p class='text-secondary mb-1'>$idInstrumento - </p> 
+                          <p class='text-secondary mb-1'>$cidade| $uf</p>
                         
-                        <h3 class='text-black'>$nome</h3>
-                        <p class='text-secondary mb-1'>$idInstrumento - </p> 
-                        <p class='text-secondary mb-1'>$cidade| $uf</p>
-                      
+                        </div>
+                        <div>
+                          <i class='mx-1 bi bi-star-fill '></i>
                         </div>
                         
                       </div>
+                    </div>
                   </div>
-                </div>
               
 
                 <div class='card mt-3 text-light rounded-5 p-3 '>
@@ -56,26 +59,46 @@ $user = "";
                         <h6 class='mb-0'><i class='mx-1 bi bi-facebook'></i>Facebook</h6>
                         <span class='text-secondary'>$idSocial</span>
                       </li>
-                      <li class='list-group-item d-flex justify-content-between align-items-center flex-wrap'>
-                        <h6 class='mb-0'><i class='mx-1 bi bi-tiktok'></i>Tik-Tok</h6>
-                        <span class='text-secondary'>$idSocial</span>
-                      </li>
                     </ul>
                     </div>
                 </div>
 
                 <div class='col-md-8 '>
 
-                    <div class='card rounded-5 p-3 mb-3'>
-                        <div class='card-body '>
-                          <p class='lead fw-bold mb-1 > Sobre</p>
-                          
-                          <div class='p-4 bg-body-tertiary rounded-5'>
-                            <p class='fonti-italic mb-1'> $descricao </p>
-                          </div>
+                
+                  <div class='card rounded-5 p-3 mb-3'>
+
+                      <div class='card-body '>
+                        
+                        
+                        
+                          <img src=''  class='rounded-5 shadow w-100'>
+                       
+
+                      </div>
+
+                      </div>
+                      
+                   
+                  <div class='card rounded-5 p-3 mb-3'>
+
+                      <div class='card-body '>
+                        
+                        
+                        <div class='p-4 bg-body-tertiary rounded-5'>
+                          <p class='fonti-italic mb-1'> $descricao </p>
+                          <p class='fonti-italic mb-1'> $descricao </p>
                         </div>
-                    </div>   
-                  </div>
+
+                      </div>
+
+                      </div>
+                      
+                    </div> 
+                 
+                    <div>
+                      
+                    </div>
                   
                 
                   <div class='card text-dark  rounded-5 p-3'>

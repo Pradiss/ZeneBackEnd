@@ -15,8 +15,6 @@ class CategoriaModel{
         return $result->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    
-    
     public function getAllPerfil(){
         $result = $this->db->prepare("SELECT * FROM usuarios");
         $result->execute();
@@ -30,7 +28,7 @@ class CategoriaModel{
     }
 
     public function getById($idCategoria){
-        $sql = $this->db->prepare("SELECT * FROM categorias WHERE idCategoriaUser = ?");
+        $sql = $this->db->prepare("SELECT * FROM categorias WHERE idCategoria = ?");
         $sql->execute([$idCategoria]);
         return $sql->fetch(PDO::FETCH_ASSOC);
 

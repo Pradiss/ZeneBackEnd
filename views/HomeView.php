@@ -17,8 +17,8 @@ foreach($result_user as $user){
 
 
     $card.= "
-    
-    <div class='col-10 col-sm-6 col-md-6 col-lg-3 p-2'>
+
+    <div class='col-10 col-sm-6 col-md-6 col-lg-3 p-2 '>
         <div class='card rounded-5 p-3 shadow ' >
         <img src='$foto' class='card-img-top rounded-5' alt='...'>
             <div class='card-body text-center'>
@@ -26,10 +26,11 @@ foreach($result_user as $user){
                 <p class='text-secondary mb-1 text-dark '>$idInstrumento | </p>
                 
                 <p class='card-text text-secondary'>$cidade | $preco</p>
-                <a href='[[base-url]]/perfil/verPerfil/$idUsuario' class='btn btn-outline-primary btn-lg rounded-4'>Perfil</a>
+                <a href='[[base-url]]/perfil/verPerfil/$idUsuario' class='btn btn-warning btn-lg rounded-4'>Perfil</a>
             </div>
         </div>
     </div>
+
 
     
     ";
@@ -47,7 +48,7 @@ foreach($listaCategoria as $categorias){
         <div class='card rounded-5  shadow overlay' >
         <a href='[[base-url]]/categoria' >
         <img src='$foto' class='card-img rounded-5' alt='...'>
-            <div class='card-img-overlay d-flex jualign-items-center'>
+            <div class='card-img-overlay d-flex justify-content-center align-items-center'>
                 <h3 class='card-title  text-white '>$generoMusical</h3>
             </div>
             </a>

@@ -47,16 +47,16 @@ class Perfil {
     }
 
     
-    public function update($idUsuario,$nome,$usuario,$idade,$descricao,$foto,$email,$cidade,$uf,$telefone,$idInstrumento,$idCategoria,$idBanda,$idSocial){
-        $sql = $this->db->prepare("UPDATE usuarios SET nome=?,usuario=?,idade=?,descricao=?,foto=?,email=?,cidade=?,uf=?,telefone=?,idInstrumento=?,idCategoria=?,idBanda=?,idSocial=? WHERE idUsuario=? ");
+    public function update($idUsuario,$nome,$usuario,$idade,$descricao,$foto,$email,$cidade,$uf,$whatsapp,$idInstrumento,$idCategoria,$instagram,$facebook){
+        $sql = $this->db->prepare("UPDATE usuarios SET nome=?,usuario=?,idade=?,descricao=?,foto=?,email=?,cidade=?,uf=?,whatsapp=?,idInstrumento=?,idCategoria=?,instagram=?,facebook=? WHERE idUsuario=? ");
 
-        return $sql->execute([$nome,$usuario,$idade,$descricao,$foto,$email,$cidade,$uf,$telefone,$idInstrumento,$idCategoria,$idBanda,$idSocial,$idUsuario]);
+        return $sql->execute([$nome,$usuario,$idade,$descricao,$foto,$email,$cidade,$uf,$whatsapp,$idInstrumento,$idCategoria,$instagram,$facebook,$idUsuario]);
     }
 
 
-    public function insertt($nome,$usuario,$idade,$descricao,$foto,$email,$cidade,$uf,$telefone,$idInstrumento,$idCategoria,$idBanda,$idSocial){
-        $sql = $this->db->prepare("INSERT INTO usuarios (nome,usuario,idade,descricao,foto,email,cidade,uf,telefone,idInstrumento,idCategoria,idBanda,idSocial) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)");
-        return $sql->execute([$nome,$usuario,$senhaCriptografada,$idade,$descricao,$foto,$email,$cidade,$uf,$telefone,$idInstrumento,$idCategoria,$idBanda,$idSocial]);
+    public function insertt($nome,$usuario,$idade,$descricao,$foto,$email,$cidade,$uf,$whatsapp,$idInstrumento,$idCategoria,$instagram,$facebook){
+        $sql = $this->db->prepare("INSERT INTO usuarios (nome,usuario,idade,descricao,foto,email,cidade,uf,whatsapp,idInstrumento,idCategoria,instagram,facebook) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)");
+        return $sql->execute([$nome,$usuario,$senhaCriptografada,$idade,$descricao,$foto,$email,$cidade,$uf,$whatsapp,$idInstrumento,$idCategoria,$instagram,$facebook]);
     
     }
    

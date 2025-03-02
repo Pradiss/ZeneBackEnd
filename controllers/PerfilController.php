@@ -75,7 +75,7 @@ class PerfilController{
         
         
         $email =$result_perfil["email"];
-        $telefone = $result_perfil["telefone"];
+        $whatsapp = $result_perfil["whatsapp"];
         $cidade =$result_perfil["cidade"];
         $idInstrumento = $result_perfil["idInstrumento"];
         $idCategoria = $result_perfil["idCategoria"];
@@ -99,7 +99,7 @@ class PerfilController{
         $uf =$_POST["uf"];
        
         
-        $telefone = $_POST["telefone"];
+        $whatsapp = $_POST["whatsapp"];
         $cidade =$_POST["cidade"];
         $idInstrumento = $_POST["idInstrumento"];
         $idCategoria = $_POST["idCategoria"];
@@ -112,9 +112,9 @@ class PerfilController{
         
         if($acao == "editar"){
             
-            $this->usuarioModel->update($idUsuario,$nome,$usuario,$idade,$descricao,$foto,$email,$cidade,$uf,$telefone,$idInstrumento,$idCategoria);
+            $this->usuarioModel->update($idUsuario,$nome,$usuario,$idade,$descricao,$foto,$email,$cidade,$uf,$whatsapp,$idInstrumento,$idCategoria);
         }else{
-            $this->usuarioModel->insertt($nome,$usuario,$idade,$descricao,$foto,$email,$cidade,$uf,$telefone,$idInstrumento,$idCategoria);
+            $this->usuarioModel->insertt($nome,$usuario,$idade,$descricao,$foto,$email,$cidade,$uf,$whatsapp,$idInstrumento,$idCategoria);
             // $this->usuarioModel->getUsuario($usuario);
         }
         

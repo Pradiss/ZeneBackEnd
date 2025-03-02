@@ -40,7 +40,7 @@ echo $header ;
             </div>
 
             <div class='p-3 '>
-                <input type="text" id="telefone"  name="telefone" class="form-control p-3  rounded-5" placeholder="Ex:(dd) 98080-9000" value="<?=$telefone?>" >
+                <input type="text" id="whatsapp"  name="whatsapp" class="form-control p-3  rounded-5" placeholder="Ex:(dd) 98080-9000" value="<?=$whatsapp?>" >
                
             </div>
             
@@ -63,7 +63,7 @@ echo $header ;
             </div>
 
             <div class='p-3'>
-                <textarea type="text" id="descricao"  name="descricao" class="form-control p-3 rounded-5 " rows="6" cols="70" placeholder="Deixe sua Descrição" value="<?=$edscricao?>"></textarea>
+                <textarea type="text" id="descricao"  name="descricao" class="form-control p-3 rounded-5 " rows="6" cols="70" placeholder="Deixe sua Descrição" value="<?=$descricao?>"></textarea>
             </div> 
             
                

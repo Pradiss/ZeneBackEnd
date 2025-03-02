@@ -11,8 +11,7 @@ foreach($result_user as $user){
     $foto = $user["foto"];
     $uf = $user["uf"];
     $idInstrumento = $user["idInstrumento"];
-    $idBanda = $user["idBanda"];
-    $idSocial = $user["idSocial"];
+   
     $preco = $user["preco"];
 
 

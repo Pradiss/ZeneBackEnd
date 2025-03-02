@@ -71,7 +71,7 @@
             </form>
             
             <div class="text-center mt-4">
-              <p class="mb-0">já tem uma conta na Zene? </p>
+              <small class="mb-0">já tem uma conta na Zene? </small>
               <a href="<?=$baseUrl?>/login" class="fw-bold text-dark">Faça seu login</a>
             </div>
        

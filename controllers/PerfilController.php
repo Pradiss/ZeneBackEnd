@@ -70,9 +70,9 @@ class PerfilController{
         $nome = $result_perfil["nome"];
         $descricao = $result_perfil["descricao"];
         $usuario = $result_perfil["usuario"];
-        $idBanda = $result_perfil["idBanda"];
+        
         $uf = $result_perfil["uf"];
-        $idSocial = $result_perfil["idSocial"];
+        
         
         $email =$result_perfil["email"];
         $telefone = $result_perfil["telefone"];
@@ -94,10 +94,10 @@ class PerfilController{
         $nome = $_POST["nome"];
         $descricao = $_POST["descricao"];
         $usuario = $_POST["usuario"];
-        $idBanda = $_POST["idBanda"];
+        
         $email =$_POST["email"];
         $uf =$_POST["uf"];
-        $idSocial =$_POST["idSocial"];
+       
         
         $telefone = $_POST["telefone"];
         $cidade =$_POST["cidade"];
@@ -112,9 +112,9 @@ class PerfilController{
         
         if($acao == "editar"){
             
-            $this->usuarioModel->update($idUsuario,$nome,$usuario,$idade,$descricao,$foto,$email,$cidade,$uf,$telefone,$idInstrumento,$idCategoria,$idBanda,$idSocial);
+            $this->usuarioModel->update($idUsuario,$nome,$usuario,$idade,$descricao,$foto,$email,$cidade,$uf,$telefone,$idInstrumento,$idCategoria);
         }else{
-            $this->usuarioModel->insertt($nome,$usuario,$idade,$descricao,$foto,$email,$cidade,$uf,$telefone,$idInstrumento,$idCategoria,$idBanda,$idSocial);
+            $this->usuarioModel->insertt($nome,$usuario,$idade,$descricao,$foto,$email,$cidade,$uf,$telefone,$idInstrumento,$idCategoria);
             // $this->usuarioModel->getUsuario($usuario);
         }
         

@@ -25,6 +25,17 @@ html {
     }
 }
 
+.bborder{
+    background-color: #f8f8f8e8;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+    
+}
+.bborder:hover{
+    background-color: #cecece;
+   
+}
+
+
 body{
     /* background: linear-gradient(to right, #d8d8d8, #2b2a2b); */
 

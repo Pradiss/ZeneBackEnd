@@ -36,7 +36,7 @@ foreach($listaPerfil as $perfil){
     $foto = $perfil["foto"];
     $uf = $perfil["uf"];
     $idInstrumento = $perfil["idInstrumento"];
-    $idBanda = $perfil["idBanda"];
+    
     
         $card.= "
         <div class='col-md-3 my-3 ms-1'>

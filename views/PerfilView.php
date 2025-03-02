@@ -11,10 +11,9 @@ $user = "";
     $email = $result_perfil["email"];
     $cidade = $result_perfil["cidade"];
     $uf = $result_perfil["uf"];
-    $telefone = $result_perfil["telefone"];
+    $whatsapp = $result_perfil["whatsapp"];
     $idInstrumento = $result_perfil["idInstrumento"];
-    $idBanda = $result_perfil["idBanda"];
-    $idSocial = $result_perfil["idSocial"];
+   
     $idCategoria = $result_perfil["idCategoria"];
 
 
@@ -50,15 +49,15 @@ $user = "";
                       <ul class='list-group list-group-flush rounded-5'>
                         <li class='list-group-item d-flex justify-content-between align-items-center flex-wrap'>
                           <h6 class='mb-0'><i class='mx-1 bi bi-whatsapp'></i>whatsapp</h6>
-                          <span class='text-secondary'>$telefone</span>
+                          <span class='text-secondary'>$whatsapp</span>
                         </li>
                         <li class='list-group-item d-flex justify-content-between align-items-center flex-wrap'>
                           <h6 class='mb-0'><i class='mx-1 bi bi-instagram'></i>Instagram</h6>
-                          <span class='text-secondary'>$idSocial</span>
+                          <span class='text-secondary'>$</span>
                         </li>
                         <li class='list-group-item d-flex justify-content-between align-items-center flex-wrap'>
                           <h6 class='mb-0'><i class='mx-1 bi bi-facebook'></i>Facebook</h6>
-                          <span class='text-secondary'>$idSocial</span>
+                          <span class='text-secondary'>$</span>
                         </li>
                       </ul>
                   
@@ -132,11 +131,6 @@ $user = "";
                 </div>
                 
                 
-              
-                      
-              
-             
-                
              
                 
 
@@ -165,15 +159,6 @@ $user = "";
                       <hr>
                       <div class='row'>
                         <div class='col-sm-3'>
-                          <h6 class='mb-0'>Banda</h6>
-                        </div>
-                        <div class='col-sm-9 text-secondary'>
-                          $idBanda
-                        </div>
-                      </div>
-                      <hr>
-                      <div class='row'>
-                        <div class='col-sm-3'>
                           <h6 class='mb-0'>Email</h6>
                         </div>
                         <div class='col-sm-9 text-secondary'>
@@ -195,7 +180,7 @@ $user = "";
                           <h6 class='mb-0'>WhatsApp</h6>
                         </div>
                         <div class='col-sm-9 text-secondary'>
-                          $telefone
+                          $whatsapp
                         </div>
                       </div>
                       <hr>
